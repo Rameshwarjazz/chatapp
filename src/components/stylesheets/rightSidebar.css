@@ -1,0 +1,177 @@
+
+.no-chat-background {
+  background-color: #a04bb9;
+}
+
+/* Stylish message box */
+.message-box {
+  height: 95vh;
+  overflow: auto;
+}
+
+/* Stylish header for the message box */
+.message-box-header {
+  background-color: rgb(131, 97, 163);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+  box-shadow: 0 4px 8px 0 rgba(216, 213, 216, 0.2), 0 6px 20px 0 rgba(111, 196, 174, 0.336);
+  color: #fff; /* Text color for the header */
+}
+
+/* Stylish message section */
+.messages-section {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px 40px;
+}
+
+/* Stylish message bubble */
+.message-bubble {
+  display: flex;
+  align-items: center;
+}
+
+/* Stylish right message bubble */
+.mbr {
+  flex-direction: row-reverse;
+}
+
+/* Stylish "No Message Found" alert */
+.no-message-alert {
+  position: absolute;
+  bottom: 50px;
+  left: 60%;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgb(196, 93, 127);
+  padding: 1.2rem;
+  border-radius: 6px; /* Add rounded corners */
+}
+
+@media screen and (max-width: 622px) {
+  .no-message-alert {
+    font-size: 14px;
+  }
+}
+
+/* Stylish left message bubble */
+.left-bubble {
+  width: 220px;
+  height: auto;
+  display: block;
+  background: #f0fe86;
+  border-radius: 4px;
+  position: relative;
+  margin: 15px 0;
+  padding: 8px;
+}
+
+@media screen and (max-width: 792px) {
+  .left-bubble {
+    width: 200px;
+    padding: 6px;
+    margin: 10px 0;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .message {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .message {
+    font-size: 12px;
+  }
+}
+
+/* Stylish right message bubble */
+.right-bubble {
+  width: 220px;
+  height: auto;
+  display: block;
+  background: #c93ba5e0;
+  border-radius: 4px;
+  position: relative;
+  margin: 10px 0;
+  align-self: flex-end;
+  padding: 8px;
+}
+
+@media screen and (max-width: 792px) {
+  .right-bubble {
+    width: 200px;
+    padding: 6px;
+    margin: 10px 0;
+  }
+}
+
+/* Stylish bubble arrow */
+.bubble-arrow {
+  position: absolute;
+  width: 0;
+  bottom: 42px;
+  left: -16px;
+  height: 0;
+}
+
+.bubble-arrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 9px solid #f5f5f5;
+  border-radius: 0 20px 0;
+  width: 15px;
+  height: 30px;
+  transform: rotate(145deg);
+}
+
+/* Stylish right bubble arrow */
+.bubble-arrow-alt {
+  right: -2px;
+  bottom: 40px;
+  left: auto;
+}
+
+.bubble-arrow-alt:after {
+  transform: rotate(45deg) scaleY(-1);
+}
+
+/* Stylish message input */
+.message-input {
+  background-color: rgba(255, 190, 239, 0.952);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+.message-input input {
+  outline: none;
+  padding: 6px;
+  width: 100%;
+}
+
+/* Stylish send button */
+.send-button {
+  background-color: rgb(214, 151, 182);
+  width: 20%;
+  color: white;
+  padding: 7px;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 792px) {
+  .send-button {
+    font-size: 12px;
+    width: 40%;
+  }
+}
